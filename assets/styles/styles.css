@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+}
+
+#banner {
+  z-index: -1;
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
+  object-position: 0 -130px;
+}
+
+h1 {
+  position: absolute;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.logo1 {
+  height: 15vh;
+  position: absolute;
+  top: 35vh;
+  left: 85vw;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+}
+
+.title {
+  width: 100vw;
+  height: 50vh;
+}
+
+nav {
+  float: left;
+  display: inline;
+}
+
+nav > a {
+  display: block;
+  margin: 0 3em 4em 3em;
+}
+
+main > div {
+  display: inline;
+}
+
+dt {
+  font-weight: 800;
+  margin: 1em 0 0 0;
+}
+
+dd {
+  margin: 0 0 0 1em;
+}
+
+
+ /* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Comic Neue', cursive;
+}
+
+#banner {
+  z-index: -1;
+  object-fit: cover;
+  height: 60%;
+  width: 100%;
+  object-position: 0 -130px;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+  background-color: white;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+}
+
+.logo {
+
+}
+
+.title {
+  width: 100vw;
+  height: 50vh;
+}
+
+nav {
+  position: absolute;
+  top: 11vh;
+  right: 6vw;
+}
+
+nav > a {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  padding: 5px 15px;
+  background-color: #4472C4;
+  margin: 1em;
+  color: white;
+  text-decoration: none;
+  box-shadow: 4px 4px #999999;
+}
+
+nav > a:hover {
+  background-color: #70AD47;
+}
+.logo1 {
+  float: left;
+  margin: 2em 2em 6em 2em;
+  height: 15vh;
+  border-color: black;
+  border-style: solid;
+}
+
+dt {
+  font-weight: 800;
+  margin: 1em 0 0 0;
+}
+
+dd {
+  margin: 0 0 0 1em;
+} */
+
