@@ -6,29 +6,59 @@
 
 * {
     margin: 0;
-    font-family: 'Comic Neue', cursive;
+}
+
+nav>.here {
+    background-color: #70AD47;
+}
+
+nav>a {
+    border: 3px solid black;
+    padding: 5px 15px;
+    background-color: #4472C4;
+    margin: 1em;
+    color: white;
+    text-decoration: none;
+    box-shadow: 4px 4px #999999;
+}
+
+nav {
+    position: absolute;
+    top: 8.5vh;
+    right: 6vw;
+}
+
+header {
+    display: inline-block;
+    width: 90vw;
+    height: 50vh;
 }
 
 #banner {
     border: 3px solid black;
-    z-index: -1;
     object-fit: cover;
-    height: 80%;
+    height: 60%;
     width: 100%;
     object-position: 0 -130px;
 }
 
 h1 {
-    position: absolute;
+    font-family: 'Comic Neue', cursive;
     font-weight: 200;
     font-size: 4em;
 }
 
 h2 {
+    font-family: 'Comic Neue', cursive;
     font-size: 2em;
     background-color: black;
     color: white;
     text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: 2em;
 }
 
 .logo1 {
@@ -37,36 +67,82 @@ h2 {
     top: 35vh;
     left: 85vw;
     background-color: white;
-border: 3px solid black;
-}
-
-header {
-    margin-left: 2.5vw;
-        display: inline-block;
-        width: 95vw;
-        height: 50vh;
-}
-
-nav {
-    width: 15vw;
-    float: left;
-    display: inline;
-}
-
-nav>a {
-    display: block;
-    margin: 0 3em 4em 3em;
+    border: 3px solid black;
 }
 
 main {
-    margin-top: 3vh;
+    font-family: 'Comic Neue', cursive;
 }
 
-main>section {
+.index {
     width: 75vw;
     display: inline-block;
 }
 
-p {
+.index > p {
     padding-left: 2em;
+}
+
+section h5 {
+    display: inline;
+}
+
+section p {
+    display: inline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    width: 50vw;
+    height: 60vh;
+}
+
+table {
+    width: 35vw;
+    text-align: left;
+}
+
+caption > p {
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+.sub {
+    text-decoration: underline;
+}
+
+
+td[rowspan], .f {
+    text-align: center;
+}
+
+div:has(div) {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    height: 7vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+.lista {
+    width: 90vw;
 }
