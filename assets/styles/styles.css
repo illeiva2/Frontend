@@ -8,78 +8,119 @@
     margin: 0;
 }
 
-nav>.here {
-    background-color: #70AD47;
+body {
+    display: flex;
+    background-color: #F5F5F5;
+    font-family: 'Roboto Condensed';
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-nav>a {
-    border: 3px solid black;
-    padding: 5px 15px;
-    background-color: #4472C4;
-    margin: 1em;
-    color: white;
-    text-decoration: none;
-    box-shadow: 4px 4px #999999;
-}
-
-nav {
-    position: absolute;
-    top: 8.5vh;
-    right: 6vw;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
 }
 
 header {
-    display: inline-block;
     width: 90vw;
-    height: 50vh;
 }
 
 #banner {
     border: 3px solid black;
     object-fit: cover;
-    height: 60%;
+    height: 30vh;
     width: 100%;
-    object-position: 0 -130px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>a {
+    color: #FCEEC1;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    flex-grow: 1;
+    background-color: #1E2A38;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.here {
+    background-color: #929292;
+}
+
+nav>a:hover {
+    background-color: #0D1820;
+}
+
+.game>section,
+.rules,
+.registration {
+    font-size: 1.2em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    width: 40vw;
+    height: 50vh;
+}
+
+.rules {
+    height: 80vh;
+    margin: 5vh 0;
+}
+
+.registration {
+    height: 90vh;
+}
+
+div h3:first-of-type {
+    margin: 1vh 0;
+}
+
+ul {
+    list-style-type: square;
 }
 
 h1 {
-    font-family: 'Comic Neue', cursive;
     font-weight: 200;
     font-size: 4em;
 }
 
 h2 {
-    font-family: 'Comic Neue', cursive;
+    width: 90vw;
+    display: block;
     font-size: 2em;
     background-color: black;
     color: white;
     text-align: center;
+    padding: 0.5em 0;
+}
+
+h3 {
+    font-size: 1.2em;
 }
 
 h4 {
+    width: 100%;
     text-align: center;
     font-size: 2em;
 }
 
-.logo1 {
-    height: 15vh;
-    position: absolute;
-    top: 35vh;
-    left: 85vw;
-    background-color: white;
-    border: 3px solid black;
-}
-
-main {
-    font-family: 'Comic Neue', cursive;
-}
-
 .index {
-    width: 75vw;
-    display: inline-block;
+    font-size: 1.5em;
+    margin-top: 5vh;
+    width: 70vw;
 }
 
-.index > p {
+.index>p {
     padding-left: 2em;
 }
 
@@ -87,43 +128,41 @@ section h5 {
     display: inline;
 }
 
-section p {
+.inline {
     display: inline;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.game {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
-    width: 50vw;
-    height: 60vh;
+section p {
+    display: inline;
 }
 
 table {
     width: 35vw;
     text-align: left;
+    border: 1px solid black;
 }
 
-caption > p {
+caption>p {
     font-style: italic;
     text-align: left;
     margin-bottom: 1.5em;
+}
+
+fieldset {
+    margin: 1vh 0;
+    border: none;
 }
 
 .sub {
     text-decoration: underline;
 }
 
+td {
+    border: 1px solid black;
+}
 
-td[rowspan], .f {
+td[rowspan],
+.f {
     text-align: center;
 }
 
@@ -132,10 +171,23 @@ div:has(div) {
     justify-content: space-between;
 }
 
-section {
-    height: 7vh;
-    flex-direction: column;
+.game {
     display: flex;
+    flex-direction: row;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game>section {
+    margin: 2vh 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -145,4 +197,115 @@ h5 {
 
 .lista {
     width: 90vw;
+}
+
+.input-group1,
+.inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.input-group1 input {
+    flex: 1;
+    width: 100%;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #929292;
+    padding: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 2px solid #1E2A38;
+}
+
+button {
+    display: block;
+    background-color: #1E2A38;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FCEEC1;
+    color: #1E2A38;
+}
+
+select {
+    appearance: none;
+    background-color: #F5F5F5;
+    border: 1px solid #929292;
+    padding: 10px;
+    font-size: 0.9em;
+    width: 100%;
+    max-width: 300px;
+}
+
+select:hover {
+    background-color: #FCEEC1;
+}
+
+select:focus {
+    border-color: #1E2A38;
+    outline: none;
+}
+
+select option {
+    background-color: #FFFFFF;
+    color: #1E2A38;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 620px) and (min-width: 465px) {
+
+    section {
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (max-width: 1010px) and (min-width: 621px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    table {
+        width: 70vw;
+        font-size: 0.8em;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .game section {
+        align-items: center;
+    }
+
+    .game>section {
+        width: 70vw;
+        font-size: 0.8em;
+    }
 }
